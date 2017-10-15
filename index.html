@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notez</title>
+</head>
+<body>
+	<h1 id="userStatus"></h1>
+	
+	<div id="signinContainer">
+		<input type="email" id="inputEmail" placeholder="Email" /><br>
+		<input type="password" id="inputPassword" placeholder="Password" /><br>
+		<p id="error"></p><br>
+		<button id="btnSignIn" class="btn btn-default">SignIn</button><br>
+		<button id="btnSignUp" class="btn btn-default">SignUp</button><br>
+	</div>
+	<div id="profileContainer">
+		<p id="email"></p>
+		<button id="btnSignout" class="btn btn-default">Sign out</button><br>
+	</div>
+	<div id="noteContainer">
+		<ul id="ulList"></ul>
+		<input type="text" id="inputTitle" placeholder="Title" /><br>
+		<input type="text" id="inputDescription" placeholder="Description" /><br>
+		<button id="btnAdd" class="btn btn-default">Add</button><br>
+		<button id="btnCancel" class="btn btn-default" style="display:none">Cancel</button><br>
+	</div>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-firestore.js"></script>
+	<script src="./app.js"></script>
+
+</body>
+</html>
